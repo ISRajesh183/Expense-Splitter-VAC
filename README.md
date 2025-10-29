@@ -1,50 +1,96 @@
-# expense-splitter
+#  Expense Splitter Web Application
 
-This template should help get you started developing with Vue 3 in Vite.
+A full-stack web application to manage shared expenses and balances among groups or friends.  
+Built using **Spring Boot** for the backend and **Vue.js** for the frontend.
 
-## Recommended IDE Setup
+---
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+##  Project Structure
 
-## Recommended Browser Setup
+Expense-Splitter-VAC/
+├── Expense-Splitter/        # Spring Boot backend (Java)
+│   ├── src/
+│   ├── pom.xml
+│   └── ...
+│       
+├── src/                     # Vue.js frontend
+├── package.json
+└── ...
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Customize configuration
+## Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+-  Manage people and group expenses
+-  Automatically calculate individual shares and balances
+-  View detailed balance reports
+-  Secure login with validation
+-  Real-time updates (through REST endpoints)
+-  Unit tests for both frontend and backend
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+##  Tech Stack
 
-### Compile and Hot-Reload for Development
+**Frontend:**
+- Vue.js 3
+- Vite
+- Axios
+- Jest (unit testing)
 
-```sh
-npm run dev
-```
+**Backend:**
+- Spring Boot
+- Spring Data JPA
+- H2 / MySQL (configurable)
+- Maven
+- JUnit 5 (unit testing)
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+##  How to Run the Project
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+###  Backend Setup
 
-```sh
-npm run test:unit
-```
+1. Navigate to the backend folder:
+   cd Expense-Splitter
 
-### Lint with [ESLint](https://eslint.org/)
+2. Build and run the Spring Boot app:
+   mvn spring-boot:run
 
-```sh
-npm run lint
-```
+3. Backend will start on:
+   http://localhost:8080
+
+---
+
+###  Frontend Setup
+
+1. Navigate to the frontend folder:
+   cd src
+
+2. Install dependencies:
+   npm install
+
+3. Start the development server:
+   npm run dev
+
+4. Frontend runs on:
+   http://localhost:5173
+
+---
+
+##  Running Tests
+
+### Backend Tests:
+cd Expense-Splitter
+mvn test
+
+### Frontend Tests:
+cd src
+npm run test
+
+---
+
+##  License
+
+This project is for academic and learning purposes.
+You may modify or extend it freely with proper attribution.
