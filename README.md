@@ -8,24 +8,26 @@ Built using **Spring Boot** for the backend and **Vue.js** for the frontend.
 ##  Project Structure
 
 Expense-Splitter-VAC/
-
-├── backend/        # Spring Boot backend (Java)
-
-│   ├── src/
-
-│   ├── pom.xml
-
-│   └── ...
-
 │
-
-└── frontend/       # Vue.js frontend
-
+├── backend/                     # Spring Boot backend (Java)
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/ssn/esa/...
+│   │   │   └── resources/
+│   │   └── test/java/com/ssn/esa/...
+│   ├── pom.xml
+│   └── README.md
+│
+└── frontend/                    # Vue.js frontend
     ├── src/
-    
+    │   ├── components/
+    │   ├── views/
+    │   ├── router/
+    │   └── store/
+    ├── public/
     ├── package.json
-    
-    └── ...
+    ├── vite.config.js
+    └── README.md
 
 ---
 
