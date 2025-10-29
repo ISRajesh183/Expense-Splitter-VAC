@@ -42,7 +42,7 @@ Expense-Splitter-VAC/
 **Backend:**
 - Spring Boot
 - Spring Data JPA
-- H2 / MySQL (configurable)
+- MongoDB 
 - Maven
 - JUnit 5 (unit testing)
 
